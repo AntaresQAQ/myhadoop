@@ -1,0 +1,71 @@
+version: '2'
+networks:
+  hadoop: 
+    driver: bridge
+services:
+  hadoop1:
+    image: antaresqaq/myhadoop:hdp
+    hostname: hadoop1
+    container_name: hadoop1
+    networks:
+      - hadoop
+    tty: true
+    environment:
+      - NAMENODE_WORKER=1
+    ports:
+      - 9870:9870
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2G
+  hadoop2:
+    image: antaresqaq/myhadoop:hdp
+    hostname: hadoop2
+    container_name: hadoop2
+    networks:
+      - hadoop
+    tty: true
+    environment:
+      - RESOURCES_MANAGER_WORKER=1
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2G
+  hadoop3:
+    image: antaresqaq/myhadoop:hdp
+    hostname: hadoop3
+    container_name: hadoop3
+    networks:
+      - hadoop
+    tty: true
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2G
+  hadoop4:
+    image: antaresqaq/myhadoop:hdp
+    hostname: hadoop4
+    container_name: hadoop4
+    networks:
+      - hadoop
+    tty: true
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2G
+  hadoop5:
+    image: antaresqaq/myhadoop:hdp
+    hostname: hadoop5
+    container_name: hadoop5
+    networks:
+      - hadoop
+    tty: true
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 2G
