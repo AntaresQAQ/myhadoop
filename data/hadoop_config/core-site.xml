@@ -32,4 +32,14 @@
   <value>root</value>
 </property>
 
+<property>
+  <name>hadoop.proxyuser.root.hosts</name>
+  <value>hadoop1</value>
+</property>
+
+<property>
+  <name>hadoop.proxyuser.root.groups</name>
+  <value>*</value>
+</property>
+
 </configuration>

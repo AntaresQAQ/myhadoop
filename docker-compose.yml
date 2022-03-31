@@ -13,7 +13,9 @@ services:
     environment:
       - NAMENODE_WORKER=1
     ports:
+      - 8020:8020
       - 9870:9870
+      - 14000:14000
     deploy:
       resources:
         limits:

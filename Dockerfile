@@ -41,6 +41,7 @@ RUN cp /tmp/data/hadoop_config/core-site.xml ${HADOOP_HOME}/etc/hadoop/core-site
     cp /tmp/data/hadoop_config/mapred-site.xml ${HADOOP_HOME}/etc/hadoop/mapred-site.xml && \
     cp /tmp/data/hadoop_config/yarn-site.xml ${HADOOP_HOME}/etc/hadoop/yarn-site.xml && \
     cp /tmp/data/hadoop_config/hadoop-env.sh ${HADOOP_HOME}/etc/hadoop/hadoop-env.sh && \
+    cp /tmp/data/hadoop_config/httpfs-site.xml ${HADOOP_HOME}/etc/hadoop/httpfs-site.xml && \
     cp /tmp/data/hadoop_config/workers ${HADOOP_HOME}/etc/hadoop/workers
 
 RUN ${HADOOP_HOME}/bin/hdfs namenode -format
