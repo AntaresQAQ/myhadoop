@@ -27,4 +27,9 @@
   <value>/hadoop/tmp/data</value>
 </property>
 
+<property>
+  <name>hadoop.http.staticuser.user</name>
+  <value>root</value>
+</property>
+
 </configuration>
